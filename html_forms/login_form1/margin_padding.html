@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margin_Padding</title>
      <!--Margin :creates an empty space around something pushes things away-->
      <!--Padding: Works inside the box -->
@@ -10,54 +10,119 @@
         *{
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction:row;
            
-
         }
         .box{
            
-            width: 120px;
-            height: 100px;
             text-align: center;
             border-radius: 12px;
             font-size: 2em;
             display: flex;
             flex-direction: row;
-
-            
+            flex-wrap: wrap;
+           
         }
         .one{
             background: peachpuff;
             margin-left: auto; /* auto:to center object */
-            margin: 12px;
-           
+            margin: 15px;
+            width: 150px;
+            height: 120px;
         }
         .two{
             background: orange;
             margin:auto;
-            margin: 12px; /*Margin top right bottom and left */
-            
+            margin: 15px; /*Margin top right bottom and left */
+            width: 150px;
+            height: 120px;
         }
         .three{
             background: powderblue;
-            margin: 12px;
+            margin: 15px;
+            width: 150px;
+            height: 120px;
             
         }
         .four{ /* Margin-top & Margin-bottom(in the same line ) is automatically set to zero  */
             background: greenyellow;
-            margin: 12px;
+            margin: 15px;
+            width: 150px;
+            height: 120px;
         }
+        .five{
+            background: springgreen;
+            margin: 15px;
+            width: 150px;
+            height: 120px;
+             }
+
+        .six {
+            background: wheat;
+            width: 150px;
+            height: 120px;
+            margin: 15px;
+        }
+        
+        .tables{
+            border: 1.5px solid black;
+            width: 400px;
+            border-collapse:collapse;
+
+        }
+        td, th{
+            border: 1.5px solid black;
+            width: 200px;
+            border-collapse: collapse;
+        }
+        
     
 
     </style>
 </head>
 <body>
-    <div class="box one">One </div>
-    <div class="box two"> Two</div>
-    <div class="box three">Three</div>
-    <div class="box four">Four</div>
+    <div class="box">
+    <div class="one">One </div>
+    <div class="two"> Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <div class="five">Five</div>
+    <div class="six">Six</div>
+
     
+    
+    
+</div>
+<div class="tables">
+    <table>
+    <thead>
+        <tr>
+        <th>Product</th>
+        <th>Product Description</th>
+        <th>Prices</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Coffee Mugs</td>
+            <td>Black Flask</td>
+            <td>ksh 600</td>
+        </tr>
+        <tr>
+            <td> Water bottles</td>
+            <td>Fancy pink glassy</td>
+            <td>ksh 499</td>
+            </tr>
+
+    </tbody>
+    </table>
+</div>
+<form action="#">
+    <label for="color" >Favourite color</label>
+    <input name="colors" type="radio" value="red">
+    <input name="colors" type="radio" value="green">
+    <input name="colors" type="radio" value="blue">
+    <input name="colors" type="radio" value="white">
+</form>
     
 </body>
 </html>
